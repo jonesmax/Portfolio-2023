@@ -33,6 +33,7 @@
     "react-baraja-js": "^1.1.1",
     "react-datepicker": "^4.8.0",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.8.0",
     "react-router-dom": "^6.2.1",
     "react-scoped-css": "^0.0.23",
     "react-scoped-style": "^0.3.0",

@@ -7,8 +7,6 @@ import theme from "./theme";
 import "./App.css";
 
 import Home from "./Components/Home";
-
-
 import { styled } from "@mui/material/styles";
 
 function App() {
@@ -21,13 +19,7 @@ function App() {
   const [open, setOpen] = React.useState(true);
 
   return (
-
-
-
-    
-           <Home />
-   
-
+    <Home />
   );
 }
 
