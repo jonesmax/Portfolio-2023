@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio_2023/static/css/main.fc841ce2.css",
-    "main.js": "/Portfolio_2023/static/js/main.2ac7d4b5.js",
-    "static/media/logo.png": "/Portfolio_2023/static/media/logo.69266e189c0893dddf48.png",
-    "static/media/desktopProject.png": "/Portfolio_2023/static/media/desktopProject.bc63e20df4940a87c0c2.png",
-    "static/media/mobileProject.png": "/Portfolio_2023/static/media/mobileProject.2d867f8d11fd34e63bab.png",
-    "static/media/Maxwell_Jones_Resume.pdf": "/Portfolio_2023/static/media/Maxwell_Jones_Resume.370a0351254090cbfc0e.pdf",
-    "index.html": "/Portfolio_2023/index.html",
-    "main.fc841ce2.css.map": "/Portfolio_2023/static/css/main.fc841ce2.css.map",
-    "main.2ac7d4b5.js.map": "/Portfolio_2023/static/js/main.2ac7d4b5.js.map"
+    "main.css": "/static/css/main.9f866fa5.css",
+    "main.js": "/static/js/main.fe5bfdbf.js",
+    "static/media/logo.png": "/static/media/logo.69266e189c0893dddf48.png",
+    "static/media/desktopProject.png": "/static/media/desktopProject.bc63e20df4940a87c0c2.png",
+    "static/media/mobileProject.png": "/static/media/mobileProject.2d867f8d11fd34e63bab.png",
+    "static/media/Maxwell_Jones_Resume.pdf": "/static/media/Maxwell_Jones_Resume.370a0351254090cbfc0e.pdf",
+    "index.html": "/index.html",
+    "main.9f866fa5.css.map": "/static/css/main.9f866fa5.css.map",
+    "main.fe5bfdbf.js.map": "/static/js/main.fe5bfdbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc841ce2.css",
-    "static/js/main.2ac7d4b5.js"
+    "static/css/main.9f866fa5.css",
+    "static/js/main.fe5bfdbf.js"
   ]
 }
