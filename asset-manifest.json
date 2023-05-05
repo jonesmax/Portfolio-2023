@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f866fa5.css",
+    "main.css": "/static/css/main.cc304d16.css",
     "main.js": "/static/js/main.fe5bfdbf.js",
     "static/media/logo.png": "/static/media/logo.69266e189c0893dddf48.png",
     "static/media/desktopProject.png": "/static/media/desktopProject.bc63e20df4940a87c0c2.png",
     "static/media/mobileProject.png": "/static/media/mobileProject.2d867f8d11fd34e63bab.png",
     "static/media/Maxwell_Jones_Resume.pdf": "/static/media/Maxwell_Jones_Resume.370a0351254090cbfc0e.pdf",
     "index.html": "/index.html",
-    "main.9f866fa5.css.map": "/static/css/main.9f866fa5.css.map",
+    "main.cc304d16.css.map": "/static/css/main.cc304d16.css.map",
     "main.fe5bfdbf.js.map": "/static/js/main.fe5bfdbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f866fa5.css",
+    "static/css/main.cc304d16.css",
     "static/js/main.fe5bfdbf.js"
   ]
 }
