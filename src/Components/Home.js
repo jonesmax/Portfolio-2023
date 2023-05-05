@@ -179,9 +179,11 @@ class Home extends React.Component {
 					<div class={colorMode == 0 ? "logoIMGLight" : "logoIMGDark"}></div>
 				</div>
 				<div class={colorMode == 0 ? "container containerLight" : "container containerDark"}>
-					<div class={colorMode == 0 ? "classCard lightMode" : "classCard darkMode"}>
-						{this.codeEditor(header_data)}
-					</div>
+			
+						<div class={colorMode == 0 ? "classCard lightMode" : "classCard darkMode"}>
+							{this.codeEditor(header_data)}
+						</div>
+		
 				</div>
 				<div class={ colorMode == 0 ? "blank blankLight" : "blank blankDark" }></div>
 
@@ -208,7 +210,7 @@ class Home extends React.Component {
 												Resumé</a>
 											<a target="_blank" class="aboutButton" href={"https://www.linkedin.com/in/maxwelljones2020/"} onClick={() => this.setState({ message: '\n\n\n\n\n\n\n\n', subject: null })}>
 												Linkedin</a>
-											<a target="_blank" class="aboutButton" href={"https://github.com/jonesmax"} onClick={() => this.setState({ message: '\n\n\n\n\n\n\n\n', subject: null })}>
+											<a target="_blank" class="aboutButton" href={"https://github.com/jonesmax/jonesmax.github.io"} onClick={() => this.setState({ message: '\n\n\n\n\n\n\n\n', subject: null })}>
 												Github</a>
 										</div>
 									</div>
