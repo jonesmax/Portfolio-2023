@@ -18,7 +18,7 @@ import mobileImage from "../Images/mobileProject.png";
 import { FaPhp, FaReact } from 'react-icons/fa';
 import { SiAmazonaws, SiApache } from 'react-icons/si';
 import { GoLocation } from 'react-icons/go';
-import { FiSmartphone } from 'react-icons/fi';
+import { FiSmartphone, FiArrowUp } from 'react-icons/fi';
 import { VscMail } from 'react-icons/vsc';
 
 class Home extends React.Component {
@@ -138,14 +138,20 @@ class Home extends React.Component {
 			"Photoshop",
 			"PHP",
 			"NPM",
+			"Python",
 			"AGILE",
 			"AWS",
 			"Linux",
 			"GIT",
 			"Jira",
 			"VueJs",
+			"Pandas",
+			"Figma",
+			".NET",
 			"Sass",
 			"Semantic",
+			"C#",
+			"GraphQL"
 		];
 		return (
 			<div class="skillRow">
@@ -155,6 +161,12 @@ class Home extends React.Component {
 			</div>
 		);
 	}
+
+	topFunction() {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	  }
+
 	render() {
 		let header_data = [
 			"Hi - Maxwell Jones",
@@ -165,10 +177,11 @@ class Home extends React.Component {
 
 		let { colorMode, subject, message } = this.state;
 
-		let emailText = `mailto:maxwel`+`ljones2012`+`@`+`gma`+`il.com?subject=${subject ? subject : 'Portfolio Message'}&body=${message ? message : ''}`
+		let emailText = `mailto:maxwel`+`ljones2012`+`@`+`gma`+`il.com?subject=${subject ? subject : 'Portfolio Message'}&body=${message ? message : ''}`;
 		return (
 			<div>
 				<img className="logoImage" onClick={() => this.setState((prevState) => ({ colorMode: !prevState.colorMode, }))}src={LogoSVG}/>
+				<div className="logoImageBottom"  onClick={() =>this.topFunction()}><FiArrowUp style={{width:'100%'}}/></div>
 				<div
 					class="logoImage2"
 					onClick={() =>
@@ -200,18 +213,20 @@ class Home extends React.Component {
 								<h1>About Me</h1>
 								<div class="contactRow">
 									<div class="contactThirds">
-										<h4 class="infoText">Growing up in front of screens, I’ve seen every UI and understand the impact of delivering clean experiences for a brand.</h4>
-										<h4 class="infoText">Throughout the past 2+ years I’ve been working on a team designing and maintaining a react web portal. My time at the company has progressed where I am now implementing foundational AGILE workflows to guide co-op students on how to deliver software in a business environment.</h4>
-										<h4 class="infoText">Presently, I lead AGILE planning and take responsibility for the platforms frontend development. I guide co-op students through the development experience by leading daily scrums, sprints and teaching foundational JavaScript skills.</h4>
+										<h4 class="infoText">As someone who grew up immersed in the digital world, I have developed a keen eye for user interfaces and understand the significance of delivering seamless experiences that align with a brand's identity. Over the course of the past 3 years, I have had the privilege of being part of a team responsible for designing and maintaining a iot device web portal.</h4>
+										<h4 class="infoText">Presently, I assume the lead position in AGILE planning and spearhead frontend development for the platform. Guiding co-op students in their development journey is a responsibility I wholeheartedly embrace. By leading daily scrums, coordinating sprints, and imparting vital JavaScript skills, I ensure our team delivers high-quality software, fostering a collaborative and growth-oriented environment. This experience has not only equipped me with a deep understanding of UI design but has also solidified my skills in ReactJS.</h4>
+										<h4 class="infoText">In June I will be moving to Toronto, Ontario.</h4>
 									</div>
 									<div class="contactThird">
 										<div class={colorMode == 0 ? "  orangeLight" : "  orangeDark"} >
-											<a target="_blank" class="aboutButton" href={PDF} onClick={() => this.setState({ message: '\n\n\n\n\n\n\n\n', subject: null })}>
+											<a target="_blank" class="aboutButton" href={PDF} >
 												Resumé</a>
-											<a target="_blank" class="aboutButton" href={"https://www.linkedin.com/in/maxwelljones2020/"} onClick={() => this.setState({ message: '\n\n\n\n\n\n\n\n', subject: null })}>
+											<a target="_blank" class="aboutButton" href={"https://www.linkedin.com/in/maxwelljones2020/"} >
 												Linkedin</a>
-											<a target="_blank" class="aboutButton" href={"https://github.com/jonesmax/jonesmax.github.io"} onClick={() => this.setState({ message: '\n\n\n\n\n\n\n\n', subject: null })}>
+											<a target="_blank" class="aboutButton" href={"https://github.com/jonesmax/jonesmax.github.io"} >
 												Github</a>
+											<a class="aboutButton"  href="#contact_me">
+												Contact</a>
 										</div>
 									</div>
 								</div>
@@ -242,16 +257,12 @@ class Home extends React.Component {
 									<h1>School Tracking</h1>
 									<h2>Full Stack Web App</h2>
 									<p>
-										This is a school organization web portal I created to
-										help plan and track the series of deadlines I had for
-										school. My goal was to create a CRUD single webpage
-										designed for a mobile device. I continuously prefer to develop
-										react single pages over native apps as you can create a
-										diverse seamless mobile UI's for any device.
-										This project includes a full stack api I created using
-										laravel, supporting several full crud routes. The webpage can
-										layout full class schedules and assignments with tracking
-										for their deadlines.
+										I designed and developed a school organization web portal specifically tailored to assist with planning and 
+										tracking multiple deadlines throughout my academic journey. My objective was to create a mobile-responsive CRUD 
+										single-page application that offers a seamless user experience. I have always been inclined towards developing React 
+										single-page applications as they allow for creating versatile and consistent mobile UIs across various devices. 
+										This project encompasses a full-stack API that I built using Laravel, enabling robust CRUD functionality through 
+										multiple routes.
 									</p>
 									<div class="langIcons">
 										<FaReact style={{ paddingRight: '10px' }} className="langIcon" size={40} />
@@ -280,9 +291,9 @@ class Home extends React.Component {
 				<div class={ colorMode == 0 ? "blank blankLight" : "blank blankDark" }>
 				</div>
 
-				<div id="contact_me" class={colorMode == 0 ? "container thirdLight" : "container thirdDark "}>
+				<div class={colorMode == 0 ? "container thirdLight" : "container thirdDark "}>
 					<div class={colorMode == 0 ? "classCardGlass lightMode" : "classCardGlass darkMode"}>
-						<div class="card">
+						<div  id="contact_me"class="card">
 							<div class="windowDiv widerWindow">
 								<div class="circleRed"></div>
 								<div class="circleYellow"></div>
@@ -324,11 +335,12 @@ class Home extends React.Component {
 
 										<div class="infoRow">
 											<VscMail className="contactIcon" size={30} />
-											<h3>maxwelljones2012@gmail.com</h3>
+											<h3><a target="_blank" class={colorMode == 0 ? "darkBlue" : " test2"} style={{backgroundColor:'transparent',padding:'0px',fontSize:'1em',textTransform:'none',textDecoration:'underline'}} href={emailText}>
+											maxwelljones2012@gmail.com</a></h3>
 										</div>
 
 										<div class={colorMode == 0 ? "infoRow submitButton orangeLight" : "infoRow submitButton orangeDark"} >
-											<a target="_blank" href={emailText} onClick={() => this.setState({ message: '\n\n\n\n\n\n\n\n', subject: null })}>
+											<a target="_blank" href={emailText} >
 												Prepare</a>
 										</div>
 									</div>
